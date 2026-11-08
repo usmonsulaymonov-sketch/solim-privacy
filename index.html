@@ -32,14 +32,14 @@
 
 <!-- ══════════════════════════════ ENGLISH ══════════════════════════════ -->
 <div class="content" data-lang="en">
-  <p class="updated">Last updated: November 2, 2026</p>
+  <p class="updated">Last updated: November 6, 2026</p>
 
   <div class="section">
     <span class="section-icon">📋</span>
     <h2>Introduction</h2>
     <p>Solim ("the app") helps you and your family take medications on time and keep track of health: courses of treatment,
     a home medicine kit, doctors and visits, symptoms and measurements (blood pressure, blood sugar, temperature, pulse).
-    It works on iPhone, Apple Watch and in widgets.</p>
+    It works on iPhone, Apple Watch, Android phones, Wear OS watches and in widgets.</p>
     <div class="highlight">Everything you enter stays on your devices. Solim has no account, no server, no analytics and no ads —
     we never receive your data and cannot see it.</div>
   </div>
@@ -85,13 +85,34 @@
   <div class="section">
     <span class="section-icon">❤️</span>
     <h2>4. Apple Health (HealthKit)</h2>
-    <p>With your permission, Solim reads your <strong>heart rate</strong> measured by Apple Watch from Apple Health when
-    you record a pulse measurement — on the Watch and on iPhone. Only the latest measurement from the last 15 minutes is
-    offered, and it is saved only if you tap “Save”. The app does not write anything to Apple Health and does not read
-    other health data.</p>
-    <p>Data obtained from Apple Health is used only to show the measurement in the app. It is never used for advertising
+    <p>With your permission, Solim reads two values measured by Apple Watch from Apple Health: <strong>heart rate</strong>
+    and <strong>resting heart rate</strong>. When you record a pulse measurement — on the Watch and on iPhone — the latest
+    heart rate from the last 15 minutes is offered, and it is saved only if you tap “Save”. Once a day Solim also saves
+    your resting heart rate, which Apple Watch calculates, as one pulse entry in your own profile; you can turn this off in
+    Profile → “Resting heart rate from Watch” and delete any entry. The app does not write anything to Apple Health and
+    does not read other health data.</p>
+    <p>Data obtained from Apple Health is used only to show and keep your measurements in the app, on your device. It is never used for advertising
     or marketing, never sold and never shared with anyone. You can revoke access at any time in the Health app or in
     iOS Settings → Privacy &amp; Security → Health.</p>
+  </div>
+
+  <div class="section">
+    <span class="section-icon">🤖</span>
+    <h2>Android, Wear OS and Health Connect</h2>
+    <p>On Android, data is stored in the app's private storage on your phone. Android cloud backup is turned off for Solim,
+    so your data is not copied to Google Drive — use the backup file (section 7) to move it. You can lock the app with
+    your fingerprint or screen lock.</p>
+    <p><strong>Wear OS.</strong> The phone sends the watch app the same limited data as for Apple Watch (section 3) through
+    the Wear OS phone–watch connection of Google Play services, not through our server. Marks and measurements made on the
+    watch go back to the phone the same way. Measuring your pulse on the watch uses the watch's heart rate sensor only
+    when you start a measurement and with your permission.</p>
+    <p><strong>Health Connect.</strong> With your permission, Solim reads only <strong>heart rate</strong> from Health
+    Connect. When you record a pulse measurement, the latest heart rate from the last 15 minutes is offered, and it is saved
+    only if you tap “Save”. Solim does not write anything to Health Connect and does not read other health data. Data from
+    Health Connect is used only to show and keep your measurements in the app, on your device; it is never used for
+    advertising, never sold and never shared. You can revoke access at any time in Health Connect settings.</p>
+    <div class="highlight">The use of information received from Health Connect adheres to the Health Connect Permissions
+    policy, including the Limited Use requirements.</div>
   </div>
 
   <div class="section">
@@ -172,14 +193,14 @@
 
 <!-- ══════════════════════════════ РУССКИЙ ══════════════════════════════ -->
 <div class="content" data-lang="ru">
-  <p class="updated">Последнее обновление: 2 ноября 2026 г.</p>
+  <p class="updated">Последнее обновление: 6 ноября 2026 г.</p>
 
   <div class="section">
     <span class="section-icon">📋</span>
     <h2>Введение</h2>
     <p>Solim («приложение») помогает вам и вашей семье принимать лекарства вовремя и следить за здоровьем: курсы лечения,
     домашняя аптечка, врачи и визиты, симптомы и замеры (давление, сахар, температура, пульс). Работает на iPhone,
-    Apple Watch и в виджетах.</p>
+    Apple Watch, телефонах Android, часах Wear OS и в виджетах.</p>
     <div class="highlight">Всё, что вы вводите, остаётся на ваших устройствах. У Solim нет учётной записи, сервера,
     аналитики и рекламы — мы не получаем ваши данные и не можем их увидеть.</div>
   </div>
@@ -225,13 +246,35 @@
   <div class="section">
     <span class="section-icon">❤️</span>
     <h2>4. Приложение «Здоровье» (HealthKit)</h2>
-    <p>С вашего разрешения Solim читает <strong>пульс</strong>, который измерили Apple Watch, из приложения «Здоровье»,
-    когда вы записываете замер пульса — на часах и на iPhone. Подставляется только последний замер за 15 минут, и
-    сохраняется он, только если вы нажмёте «Сохранить». Приложение ничего не записывает в «Здоровье» и не читает
-    другие данные.</p>
-    <p>Данные из «Здоровья» используются только для показа замера в приложении. Они никогда не используются для рекламы
+    <p>С вашего разрешения Solim читает из приложения «Здоровье» два показателя, которые измерили Apple Watch:
+    <strong>пульс</strong> и <strong>пульс в покое</strong>. Когда вы записываете замер пульса — на часах и на iPhone, —
+    подставляется последний пульс за 15 минут, и сохраняется он, только если вы нажмёте «Сохранить». Кроме того, раз в
+    день Solim сохраняет пульс в покое, который считают Apple Watch, — одной записью пульса в вашем профиле; это можно
+    выключить в «Профиле» → «Пульс в покое с часов», а любую запись — удалить. Приложение ничего не записывает в
+    «Здоровье» и не читает другие данные.</p>
+    <p>Данные из «Здоровья» используются только для показа и хранения ваших замеров в приложении, на вашем устройстве. Они никогда не используются для рекламы
     и маркетинга, не продаются и никому не передаются. Отозвать доступ можно в любой момент в приложении «Здоровье»
     или в Настройках iOS → Конфиденциальность и безопасность → Здоровье.</p>
+  </div>
+
+  <div class="section">
+    <span class="section-icon">🤖</span>
+    <h2>Android, Wear OS и Health Connect</h2>
+    <p>На Android данные хранятся в закрытом хранилище приложения на телефоне. Облачное резервное копирование Android для
+    Solim выключено — данные не копируются на Google Диск; чтобы перенести их, используйте файл копии (раздел 7).
+    Приложение можно закрыть отпечатком пальца или блокировкой экрана.</p>
+    <p><strong>Wear OS.</strong> Телефон передаёт приложению на часах те же ограниченные данные, что и Apple Watch (раздел 3),
+    через связь телефона и часов Wear OS из сервисов Google Play, а не через наш сервер. Отметки и замеры с часов
+    возвращаются на телефон тем же путём. Пульс на часах измеряется датчиком часов только когда вы сами начинаете замер
+    и с вашего разрешения.</p>
+    <p><strong>Health Connect.</strong> С вашего разрешения Solim читает из Health Connect только <strong>пульс</strong>.
+    Когда вы записываете пульс, приложение предлагает последний замер за 15 минут, и он сохраняется, только если нажать
+    «Сохранить». Solim ничего не записывает в Health Connect и не читает другие данные о здоровье. Данные из Health
+    Connect используются только чтобы показать и хранить ваши замеры в приложении, на вашем устройстве; они не
+    используются для рекламы, не продаются и никому не передаются. Отозвать доступ можно в любой момент в настройках
+    Health Connect.</p>
+    <div class="highlight">Использование данных, полученных из Health Connect, соответствует правилам разрешений Health
+    Connect, включая требования ограниченного использования (Limited Use).</div>
   </div>
 
   <div class="section">
@@ -312,14 +355,14 @@
 
 <!-- ══════════════════════════════ ТОҶИКӢ ══════════════════════════════ -->
 <div class="content" data-lang="tg">
-  <p class="updated">Навсозии охирин: 2 ноябри 2026</p>
+  <p class="updated">Навсозии охирин: 6 ноябри 2026</p>
 
   <div class="section">
     <span class="section-icon">📋</span>
     <h2>Муқаддима</h2>
     <p>Solim («барнома») ба шумо ва оилаатон кӯмак мекунад, ки доруҳоро сари вақт қабул кунед ва саломатиро назорат
     намоед: курсҳои табобат, дорухонаи хонагӣ, духтурон ва ташрифҳо, аломатҳо ва ченкуниҳо (фишори хун, қанд, ҳарорат,
-    набз). Дар iPhone, Apple Watch ва виҷетҳо кор мекунад.</p>
+    набз). Дар iPhone, Apple Watch, телефонҳои Android, соатҳои Wear OS ва виҷетҳо кор мекунад.</p>
     <div class="highlight">Ҳар чизе, ки шумо ворид мекунед, дар дастгоҳҳои шумо мемонад. Solim ҳисоби корбарӣ, сервер,
     таҳлил ва реклама надорад — мо маълумоти шуморо намегирем ва дида наметавонем.</div>
   </div>
@@ -366,12 +409,35 @@
   <div class="section">
     <span class="section-icon">❤️</span>
     <h2>4. Барномаи «Саломатӣ» (HealthKit)</h2>
-    <p>Бо иҷозати шумо Solim ҳангоми сабти набз <strong>набзеро</strong>, ки Apple Watch чен кардааст, аз барномаи
-    «Саломатӣ» мехонад — дар соат ва дар iPhone. Танҳо ченкунии охирини 15 дақиқа пешниҳод мешавад ва танҳо пас аз
-    пахш кардани «Нигоҳ доштан» сабт мешавад. Барнома ба «Саломатӣ» чизе наменависад ва дигар маълумотро намехонад.</p>
-    <p>Маълумоти «Саломатӣ» танҳо барои нишон додани ченкунӣ дар барнома истифода мешавад. Он ҳеҷ гоҳ барои реклама
+    <p>Бо иҷозати шумо Solim аз барномаи «Саломатӣ» ду нишондиҳандаеро мехонад, ки Apple Watch чен кардааст:
+    <strong>набз</strong> ва <strong>набзи оромӣ</strong>. Ҳангоми сабти набз — дар соат ва дар iPhone — набзи охирини
+    15 дақиқа пешниҳод мешавад ва танҳо пас аз пахш кардани «Нигоҳ доштан» сабт мешавад. Ғайр аз ин, Solim рӯзе як бор
+    набзи оромиро, ки Apple Watch ҳисоб мекунад, ҳамчун як сабти набз дар профили шумо нигоҳ медорад; инро дар «Профил» →
+    «Набзи оромӣ аз соат» хомӯш кардан ва ҳар сабтро нест кардан мумкин аст. Барнома ба «Саломатӣ» чизе наменависад ва
+    дигар маълумотро намехонад.</p>
+    <p>Маълумоти «Саломатӣ» танҳо барои нишон додан ва нигоҳ доштани ченкуниҳои шумо дар барнома, дар дастгоҳи шумо истифода мешавад. Он ҳеҷ гоҳ барои реклама
     истифода намешавад, фурӯхта намешавад ва ба касе дода намешавад. Дастрасиро ҳар вақт дар барномаи «Саломатӣ» ё
     Танзимоти iOS бекор кардан мумкин аст.</p>
+  </div>
+
+  <div class="section">
+    <span class="section-icon">🤖</span>
+    <h2>Android, Wear OS ва Health Connect</h2>
+    <p>Дар Android маълумот дар анбори пӯшидаи барнома дар телефон нигоҳ дошта мешавад. Нусхабардории абрии Android
+    барои Solim хомӯш аст — маълумот ба Google Drive нусха намешавад; барои интиқол файли нусхаи эҳтиётиро истифода
+    баред (бахши 7). Барномаро бо изи ангушт ё қулфи экран бастан мумкин аст.</p>
+    <p><strong>Wear OS.</strong> Телефон ба барномаи соат ҳамон маълумоти маҳдудро мефиристад, ки ба Apple Watch (бахши 3),
+    тавассути пайвасти телефон ва соати Wear OS аз хизматрасониҳои Google Play, на тавассути сервери мо. Қайдҳо ва
+    ченкуниҳо аз соат бо ҳамон роҳ ба телефон бармегарданд. Набз дар соат бо датчики соат танҳо вақте чен карда
+    мешавад, ки шумо худ ченкуниро оғоз мекунед ва бо иҷозати шумо.</p>
+    <p><strong>Health Connect.</strong> Бо иҷозати шумо Solim аз Health Connect танҳо <strong>набз</strong>-ро мехонад.
+    Ҳангоми сабти набз охирин ченкунӣ дар 15 дақиқа пешниҳод мешавад ва танҳо пас аз пахши «Нигоҳ доштан» сабт мешавад.
+    Solim ба Health Connect чизе наменависад ва дигар маълумоти саломатиро намехонад. Маълумот аз Health Connect танҳо
+    барои нишон додан ва нигоҳ доштани ченкуниҳои шумо дар барнома, дар дастгоҳи шумо истифода мешавад; барои реклама
+    истифода намешавад, фурӯхта намешавад ва ба касе дода намешавад. Дастрасиро ҳар вақт дар танзимоти Health Connect
+    бекор кардан мумкин аст.</p>
+    <div class="highlight">Истифодаи маълумоти аз Health Connect гирифташуда ба қоидаҳои иҷозатҳои Health Connect, аз
+    ҷумла талаботи истифодаи маҳдуд (Limited Use), мувофиқ аст.</div>
   </div>
 
   <div class="section">
